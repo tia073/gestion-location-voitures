@@ -1,0 +1,156 @@
+/* =====================================================================
+   Projet : Gestion de Location de Voitures
+   Fichier : style.css
+   ===================================================================== */
+
+:root {
+    --primary-color: #1e5f8c;
+    --primary-dark: #143f5c;
+    --accent-color: #f5a623;
+    --light-bg: #f6f8fa;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: #212529;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------
+   Navbar
+   --------------------------------------------------------------------- */
+.app-navbar {
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-color));
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.app-navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* ---------------------------------------------------------------------
+   Hero section (accueil)
+   --------------------------------------------------------------------- */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    color: #fff;
+    padding: 90px 20px;
+    margin-bottom: 20px;
+}
+.hero-section h1 {
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+.hero-section .lead {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+.how-it-works-step {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    height: 100%;
+}
+.how-it-works-step i {
+    color: var(--primary-color);
+}
+
+/* ---------------------------------------------------------------------
+   Cartes véhicules
+   --------------------------------------------------------------------- */
+.vehicule-card img,
+.card-img-top {
+    height: 190px;
+    object-fit: cover;
+    background-color: #e9ecef;
+}
+.vehicule-card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.vehicule-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12) !important;
+}
+
+/* ---------------------------------------------------------------------
+   Badges de statut
+   --------------------------------------------------------------------- */
+.badge-success  { background-color: #1e8e3e; color: #fff; padding: .4em .7em; border-radius: 8px; }
+.badge-warning  { background-color: #f5a623; color: #212529; padding: .4em .7em; border-radius: 8px; }
+.badge-danger   { background-color: #d64545; color: #fff; padding: .4em .7em; border-radius: 8px; }
+.badge-info     { background-color: #2b8ec2; color: #fff; padding: .4em .7em; border-radius: 8px; }
+.badge-secondary{ background-color: #6c757d; color: #fff; padding: .4em .7em; border-radius: 8px; }
+
+/* ---------------------------------------------------------------------
+   Cartes statistiques (dashboard admin)
+   --------------------------------------------------------------------- */
+.stat-card {
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: #fff;
+}
+.stat-card-2 { background: linear-gradient(135deg, #2b8ec2, #1e5f8c); }
+.stat-card-3 { background: linear-gradient(135deg, #f5a623, #d98c1a); }
+.stat-card-4 { background: linear-gradient(135deg, #1e8e3e, #146229); }
+.stat-card h3 { font-weight: 700; margin-bottom: 0.2rem; }
+
+/* ---------------------------------------------------------------------
+   Formulaires d'authentification
+   --------------------------------------------------------------------- */
+.auth-card {
+    border: none;
+    border-radius: 16px;
+}
+
+/* ---------------------------------------------------------------------
+   Divers
+   --------------------------------------------------------------------- */
+.reservation-thumb {
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+.modifier-image-preview {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.facture-card {
+    max-width: 800px;
+}
+
+.app-footer {
+    background-color: var(--primary-dark);
+    color: #e9ecef;
+}
+.app-footer a {
+    color: #cfd8dc;
+}
+.app-footer a:hover {
+    color: #fff;
+}
+
+@media print {
+    .no-print, .app-navbar, .app-footer { display: none !important; }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 { font-size: 2rem; }
+    .hero-section { padding: 60px 15px; }
+}
