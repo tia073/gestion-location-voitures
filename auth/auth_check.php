@@ -1,0 +1,1 @@
+*auth/auth_check.php
