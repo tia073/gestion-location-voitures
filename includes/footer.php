@@ -32,7 +32,7 @@ if (!isset($basePath)) {
             </div>
         </div>
         <hr>
-        <p class="text-center small mb-0">&copy; <?= date('Y') ?> <?= e(SITE_NAME) ?> — Projet universitaire L2.</p>
+        <p class="text-center small mb-0">&copy; <?= date('Y') ?> <?= e(SITE_NAME) ?> </p>
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
