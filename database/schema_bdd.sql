@@ -1,4 +1,4 @@
-*database/schema_bdd.sql
+
 -- =====================================================================
 -- Projet : Gestion de Location de Voitures
 -- Fichier : schema_bdd.sql
