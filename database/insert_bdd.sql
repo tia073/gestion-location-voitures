@@ -1,4 +1,4 @@
-*database/insert_bdd.sql
+
 -- =====================================================================
 -- Projet : Gestion de Location de Voitures
 -- Fichier : insert_bdd.sql
